@@ -1,0 +1,143 @@
+:root{
+    --full-height: 
+}
+
+
+/* #88F075 */
+/* #56A348 */
+/* #A34840 */
+/* #46EDF0 */
+/* #37A1A3 */
+
+@keyframes prof-rot {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes prof-flip {
+    0% {transform: scaleX(1)}
+    100% {transform: scaleX(-1)}
+}
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: blue;
+}
+
+#alldiv {
+    background: red;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #A34840;
+    height: 240px;
+}
+
+#upper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75%;
+}
+
+nav {
+    border-top: solid 4px #618683;
+    border-bottom: solid 4px #618683;
+    box-sizing: border-box;
+    background: #11d1d4;
+    height: 25%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navcons {
+    display: flex;
+    min-width: 120px;
+    background: #0fbabd;
+    border-left: solid 5px #618683;
+    justify-content: center;
+    align-items: center;
+    font-size:larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color:white;
+}
+
+.navcons:hover {
+    background: #0b8b8e;
+}
+
+
+#page-info {
+    width: 80%;
+    display:flex;
+    align-items: center;
+    height: 100%;
+    justify-self: flex-end;
+}
+
+#page-info > p {
+    font-weight: 900;
+    color: white;
+    font-size: 3.2em;;
+}
+
+#profile-frame {
+    overflow: hidden;
+    align-self: center;
+    border-radius: 50%;
+    margin-left: 50px;
+    background: #934139;
+    height: 160px;
+    width: 160px;
+}
+
+#profile-pic {
+    top: 160px;
+    border-radius: 50%;
+    position: relative;
+    height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/CEO-minSMALl.png");
+    transition: top;
+    transition-duration: 1s;
+}
+
+#profile-frame:hover #profile-pic {
+    animation: prof-rot 1.5s infinite alternate ease-in-out;
+    transition-duration: .5s;    
+    top: 0px;
+}
+
+header:hover #profile-pic {
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    top: 95px;
+}
+
+
+
+#central {
+    background: #5c2824;
+    height: fit-content;
+    flex: 1 1 auto;
+
+}
+
+footer { 
+    box-sizing: border-box;
+    border-top: solid 7px #56A348;
+
+    
+    background: #386a2f;
+    height: 160px;
+}

@@ -1,0 +1,38 @@
+
+#card-grid {
+    height: auto;
+    margin: 50px 100px 50px 100px;
+    justify-content:space-evenly;
+    display: grid;
+    grid-gap: 50px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, 250px);
+
+
+}
+
+.cards {   
+    background: white;
+    border: 5px solid black;
+    border-radius: 5%;
+    overflow: hidden;
+    height: 300px;
+    width: 250px;
+    transition: transform;
+    transition-duration: 0.5s;
+}
+
+.cards:hover {
+    transition-duration: 0.2s;
+    transform: translate(-4px, -20px);
+}
+
+.cards:active {
+    transition-duration: 0.1s;
+    transform: translate(0px, -10px)
+}
+
+.card-pics {
+    border-bottom: 5px solid black;
+    height: 70%;
+}
