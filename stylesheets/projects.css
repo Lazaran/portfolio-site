@@ -13,13 +13,15 @@
 
 .cards {   
     background: white;
-    border: 5px solid black;
+    border: 6px solid black;
     border-radius: 5%;
     overflow: hidden;
     height: 300px;
-    width: 250px;
+    width: 100%;
     transition: transform;
     transition-duration: 0.5s;
+    padding: 0px;
+    margin: 0px;
 }
 
 .cards:hover {
@@ -35,4 +37,37 @@
 .card-pics {
     border-bottom: 5px solid black;
     height: 70%;
+
+}
+
+#card1 > .card-pics {
+    background: url("../img/rubik.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card2 > .card-pics {
+    background: url("../img/colorpicker.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#card3 > .card-pics {
+    background: url("../img/nothere.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.card-titles {
+    margin: 5% 2% 0% 2%
 }
